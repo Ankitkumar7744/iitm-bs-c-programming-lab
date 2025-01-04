@@ -7,7 +7,8 @@ int prime_bad(int n)
     }
     else
     {
-        for (int i=2; i*i < n; i++)
+        for (int i=2; i*i <= n; i++) // Condition is always giving true value , so we need to a assign = this
+ 
         {
             if (n%i == 0)
             {
